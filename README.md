@@ -13,6 +13,7 @@ Public-data Streamlit dashboard for understanding UK full-fibre availability and
 
 ```powershell
 pip install -r requirements.txt
+python scripts/fetch_real_data.py
 streamlit run main.py
 ```
 
@@ -37,6 +38,6 @@ Population is secondary context. Copper, ADSL, PSTN, and FTTC-only coverage are 
 
 ## Data Caveat
 
-Version 1 supports sample/cache data. Public-data ingestion should be treated as transparent and reproducible, but exact provider attribution is not part of the first release.
+Version 1 supports real public Ofcom/ONS cache data and falls back to sample data when the cache files are not present. Public-data ingestion is transparent and reproducible, but exact provider attribution is not part of the first release.
 
-The current dashboard ships with sample postcode district metrics and geometry. It validates the methodology and interface; replacing the sample files with current Ofcom and ONS public data is the next data-engineering step.
+The current real-data layer uses Ofcom Spring 2026 local-authority FTTP coverage because the Spring 2026 postcode CSVs inspected in the Ofcom ZIP do not expose an explicit `Full Fibre availability` column. The postcode-district sample remains in the repo to validate the original postcode-district workflow without treating gigabit-capable coverage as FTTP.

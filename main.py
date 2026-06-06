@@ -2,6 +2,7 @@ import streamlit as st
 
 from src.uk_fttp_map.dashboard import (
     render_filters,
+    render_insights,
     render_kpis,
     render_map,
     render_methodology,
@@ -27,6 +28,7 @@ if filtered_metrics.empty:
 
 render_kpis(filtered_metrics)
 render_map(filtered_metrics, selected_metric, load_boundaries_path())
-st.subheader("Ranked postcode district opportunities")
+render_insights(filtered_metrics)
+st.subheader("Ranked FTTP opportunities")
 render_ranked_table(filtered_metrics)
 render_methodology()

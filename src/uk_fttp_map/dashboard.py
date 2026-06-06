@@ -61,14 +61,18 @@ def render_kpis(df: pd.DataFrame) -> None:
 
 def render_map(df: pd.DataFrame, metric: str, boundaries_path: Path) -> None:
     geojson = json.loads(boundaries_path.read_text())
+    properties = geojson["features"][0]["properties"]
+    feature_key = "properties.LAD25CD" if "LAD25CD" in properties else "properties.postcode_district"
     fig = px.choropleth_map(
         df,
         geojson=geojson,
         locations="postcode_district",
-        featureidkey="properties.postcode_district",
+        featureidkey=feature_key,
         color=metric,
-        hover_name="postcode_district",
+        hover_name="area_name",
         hover_data={
+            "postcode_district": True,
+            "geography_level": True,
             "nation": True,
             "region": True,
             "total_premises": ":,",
@@ -89,6 +93,8 @@ def render_map(df: pd.DataFrame, metric: str, boundaries_path: Path) -> None:
 def render_ranked_table(df: pd.DataFrame) -> None:
     columns = [
         "postcode_district",
+        "area_name",
+        "geography_level",
         "nation",
         "region",
         "total_premises",
@@ -110,11 +116,46 @@ def render_ranked_table(df: pd.DataFrame) -> None:
     )
 
 
+def render_insights(df: pd.DataFrame) -> None:
+    st.subheader("Real-data insights")
+    col1, col2 = st.columns(2)
+
+    opportunity_columns = [
+        "area_name",
+        "nation",
+        "total_premises",
+        "non_fttp_premises",
+        "fttp_coverage_percent",
+        "opportunity_score",
+    ]
+    with col1:
+        st.markdown("**Largest remaining FTTP opportunities**")
+        st.dataframe(
+            df.sort_values("non_fttp_premises", ascending=False)
+            .head(10)[opportunity_columns],
+            use_container_width=True,
+            hide_index=True,
+        )
+
+    with col2:
+        st.markdown("**Lowest FTTP coverage, 10k+ premises**")
+        st.dataframe(
+            df[df["total_premises"] >= 10000]
+            .sort_values("fttp_coverage_percent", ascending=True)
+            .head(10)[opportunity_columns],
+            use_container_width=True,
+            hide_index=True,
+        )
+
+
 def render_methodology() -> None:
     with st.expander("Methodology and limitations"):
         st.write(
-            "This version uses public/sample FTTP premises data at postcode district level. "
+            "This version uses public Ofcom Spring 2026 FTTP premises data where cached, "
+            "falling back to sample data only when the public files are not present. "
             "The opportunity score is premises-led: 50% non-FTTP premises, "
             "30% inverse FTTP coverage, and 20% premises density. "
-            "Copper, ADSL, PSTN, and FTTC-only coverage are out of scope."
+            "Copper, ADSL, PSTN, FTTC-only, and gigabit-capable proxy metrics are out of scope. "
+            "The latest Ofcom postcode files inspected for Spring 2026 do not expose an explicit "
+            "Full Fibre availability column, so the real FTTP layer currently uses local authorities."
         )

@@ -19,9 +19,9 @@ def calculate_metrics(df: pd.DataFrame) -> pd.DataFrame:
     result["fttp_coverage_percent"] = (
         result["fttp_available_premises"] / result["total_premises"] * 100
     ).fillna(0.0)
-    result["premises_density"] = (
-        result["total_premises"] / result["area_sq_km"].replace(0, pd.NA)
-    ).fillna(0.0)
+    area = pd.to_numeric(result["area_sq_km"], errors="coerce")
+    density = result["total_premises"] / area.where(area > 0)
+    result["premises_density"] = density.fillna(0.0)
     return result
 
 

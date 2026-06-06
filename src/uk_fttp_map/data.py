@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from pathlib import Path
+from zipfile import ZipFile
 
 import pandas as pd
 
@@ -10,6 +11,8 @@ from src.uk_fttp_map.scoring import calculate_metrics, score_opportunities
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 SAMPLE_METRICS_PATH = PROJECT_ROOT / "data" / "sample" / "postcode_district_metrics.csv"
 SAMPLE_BOUNDARIES_PATH = PROJECT_ROOT / "data" / "sample" / "postcode_district_boundaries.geojson"
+OFCOM_FIXED_BROADBAND_ZIP_PATH = PROJECT_ROOT / "data" / "cache" / "ofcom_fixed_broadband_202601.zip"
+LAUA_BOUNDARIES_PATH = PROJECT_ROOT / "data" / "cache" / "laua_boundaries_dec_2025.geojson"
 
 REQUIRED_METRIC_COLUMNS = [
     "postcode_district",
@@ -32,12 +35,63 @@ def validate_metrics(df: pd.DataFrame) -> None:
             raise ValueError(f"{column} cannot contain negative values")
 
 
-def load_metrics(path: Path | str = SAMPLE_METRICS_PATH) -> pd.DataFrame:
-    df = pd.read_csv(path)
-    validate_metrics(df)
+def _score_and_sort(df: pd.DataFrame) -> pd.DataFrame:
     scored = score_opportunities(calculate_metrics(df))
     return scored.sort_values("opportunity_score", ascending=False).reset_index(drop=True)
 
 
+def _nation_from_laua(code: str) -> str:
+    if code.startswith("E"):
+        return "England"
+    if code.startswith("S"):
+        return "Scotland"
+    if code.startswith("W"):
+        return "Wales"
+    if code.startswith("N"):
+        return "Northern Ireland"
+    return "Unknown"
+
+
+def load_ofcom_laua_metrics(zip_path: Path | str = OFCOM_FIXED_BROADBAND_ZIP_PATH) -> pd.DataFrame:
+    csv_name = "202601_fixed_laua_coverage_r1/202601_fixed_laua_coverage_r1.csv"
+    with ZipFile(zip_path) as archive:
+        df = pd.read_csv(archive.open(csv_name), encoding="latin1")
+
+    result = pd.DataFrame(
+        {
+            "postcode_district": df["laua"].astype(str),
+            "area_name": df["laua_name"].astype(str).str.title(),
+            "geography_level": "Local authority",
+            "nation": df["laua"].astype(str).map(_nation_from_laua),
+            "region": df["laua_name"].astype(str).str.title(),
+            "total_premises": pd.to_numeric(df["All Premises"], errors="coerce").fillna(0),
+            "fttp_available_premises": pd.to_numeric(
+                df["Number of premises with Full Fibre availability"],
+                errors="coerce",
+            ).fillna(0),
+            "area_sq_km": 0.0,
+        }
+    )
+    validate_metrics(result)
+    return _score_and_sort(result)
+
+
+def load_metrics(path: Path | str | None = None) -> pd.DataFrame:
+    if path is None:
+        if OFCOM_FIXED_BROADBAND_ZIP_PATH.exists():
+            return load_ofcom_laua_metrics(OFCOM_FIXED_BROADBAND_ZIP_PATH)
+        path = SAMPLE_METRICS_PATH
+
+    df = pd.read_csv(path)
+    validate_metrics(df)
+    if "area_name" not in df.columns:
+        df["area_name"] = df["postcode_district"]
+    if "geography_level" not in df.columns:
+        df["geography_level"] = "Postcode district sample"
+    return _score_and_sort(df)
+
+
 def load_boundaries_path() -> Path:
+    if LAUA_BOUNDARIES_PATH.exists() and OFCOM_FIXED_BROADBAND_ZIP_PATH.exists():
+        return LAUA_BOUNDARIES_PATH
     return SAMPLE_BOUNDARIES_PATH
