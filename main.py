@@ -19,6 +19,7 @@ st.set_page_config(
 
 st.title("UK FTTP Opportunity Map")
 st.caption("Public-data FTTP view focused on premises opportunity.")
+st.caption("Build: real-data transparency release 309fc44+")
 
 try:
     metrics = load_metrics()
