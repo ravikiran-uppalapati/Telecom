@@ -1,0 +1,362 @@
+postcode_district,area_name,geography_level,nation,region,total_premises,fttp_available_premises,area_sq_km,non_fttp_premises,fttp_coverage_percent,premises_density,opportunity_score,opportunity_category
+E06000052,Cornwall,Local authority,England,Cornwall,312395,203943,0.0,108452,65.28369532162806,0.0,60.41,Major opportunity
+S12000034,Aberdeenshire,Local authority,Scotland,Aberdeenshire,131027,63535,0.0,67492,48.490005876651374,0.0,46.47,Major opportunity
+S12000035,Argyll And Bute,Local authority,Scotland,Argyll And Bute,58013,13837,0.0,44176,23.851550514539845,0.0,43.06,Major opportunity
+S12000048,Perth And Kinross,Local authority,Scotland,Perth And Kinross,82087,30065,0.0,52022,36.62577509228014,0.0,42.87,Major opportunity
+E06000054,Wiltshire,Local authority,England,Wiltshire,242119,168810,0.0,73309,69.72191360446722,0.0,42.8,Major opportunity
+E06000066,Somerset,Local authority,England,Somerset,287056,214242,0.0,72814,74.63421771361686,0.0,41.1,Major opportunity
+E09000010,Enfield,Local authority,England,Enfield,137604,81821,0.0,55783,59.46120752303712,0.0,37.76,Major opportunity
+E08000025,Birmingham,Local authority,England,Birmingham,495645,424078,0.0,71567,85.5608348717328,0.0,37.24,Major opportunity
+E06000060,Buckinghamshire,Local authority,England,Buckinghamshire,250031,186216,0.0,63815,74.47716483156088,0.0,36.98,Major opportunity
+S12000047,Fife,Local authority,Scotland,Fife,197211,141357,0.0,55854,71.67805041300942,0.0,34.13,Major opportunity
+S12000017,Highland,Local authority,Scotland,Highland,137076,86837,0.0,50239,63.349528728588524,0.0,34.02,Major opportunity
+S12000029,South Lanarkshire,Local authority,Scotland,South Lanarkshire,168033,115568,0.0,52465,68.7769664292133,0.0,33.43,Major opportunity
+S12000013,Na H-Eileanan Siar,Local authority,Scotland,Na H-Eileanan Siar,17811,2138,0.0,15673,12.003817865364102,0.0,33.41,Major opportunity
+E09000008,Croydon,Local authority,England,Croydon,175754,124253,0.0,51501,70.69711073432184,0.0,32.4,Major opportunity
+E09000003,Barnet,Local authority,England,Barnet,167914,117119,0.0,50795,69.74939552389914,0.0,32.36,Major opportunity
+E06000065,North Yorkshire,Local authority,England,North Yorkshire,328672,270510,0.0,58162,82.30393827280693,0.0,32.01,Major opportunity
+E09000014,Haringey,Local authority,England,Haringey,114429,70437,0.0,43992,61.555200167789636,0.0,31.67,Major opportunity
+E06000025,South Gloucestershire,Local authority,England,South Gloucestershire,137521,92158,0.0,45363,67.01376517041034,0.0,30.66,Major opportunity
+E09000006,Bromley,Local authority,England,Bromley,148822,102996,0.0,45826,69.20750964239159,0.0,30.22,Major opportunity
+E06000020,Telford And Wrekin,Local authority,England,Telford And Wrekin,89421,51411,0.0,38010,57.4932062938236,0.0,30.11,Major opportunity
+E06000043,Brighton And Hove,Local authority,England,Brighton And Hove,145440,100157,0.0,45283,68.86482398239824,0.0,30.07,Major opportunity
+S12000050,North Lanarkshire,Local authority,Scotland,North Lanarkshire,169925,123443,0.0,46482,72.64557893188172,0.0,29.49,Major opportunity
+E06000004,Stockton-On-Tees,Local authority,England,Stockton-On-Tees,93612,55786,0.0,37826,59.592787249497924,0.0,29.4,Major opportunity
+E06000059,Dorset,Local authority,England,Dorset,197995,149983,0.0,48012,75.75090280057577,0.0,29.27,Major opportunity
+E09000009,Ealing,Local authority,England,Ealing,161460,116192,0.0,45268,71.96333457203022,0.0,29.14,Major opportunity
+S12000027,Shetland Islands,Local authority,Scotland,Shetland Islands,13367,2678,0.0,10689,20.034413106905063,0.0,28.69,Major opportunity
+E07000073,Harlow,Local authority,England,Harlow,42481,17790,0.0,24691,41.877545255526,0.0,28.63,Major opportunity
+E09000018,Hounslow,Local authority,England,Hounslow,107464,70805,0.0,36659,65.88718082334549,0.0,26.97,Major opportunity
+E07000147,North Norfolk,Local authority,England,North Norfolk,62089,33813,0.0,28276,54.45892187021856,0.0,26.51,Major opportunity
+E06000051,Shropshire,Local authority,England,Shropshire,159756,118691,0.0,41065,74.29517514209168,0.0,26.49,Major opportunity
+E07000178,Oxford,Local authority,England,Oxford,69368,39634,0.0,29734,57.1358551493484,0.0,26.39,Major opportunity
+S12000036,City Of Edinburgh,Local authority,Scotland,City Of Edinburgh,290522,244609,0.0,45913,84.19637755488397,0.0,25.76,Major opportunity
+E06000049,Cheshire East,Local authority,England,Cheshire East,201908,159909,0.0,41999,79.19894209243814,0.0,25.45,Major opportunity
+E06000058,"Bournemouth, Christchurch And Poole",Local authority,England,"Bournemouth, Christchurch And Poole",202347,160593,0.0,41754,79.36514996515886,0.0,25.29,Major opportunity
+S12000023,Orkney Islands,Local authority,Scotland,Orkney Islands,13362,4015,0.0,9347,30.04789702140398,0.0,25.07,Major opportunity
+E06000003,Redcar And Cleveland,Local authority,England,Redcar And Cleveland,70507,42509,0.0,27998,60.29046761314479,0.0,24.64,Major opportunity
+E07000222,Warwick,Local authority,England,Warwick,73506,45099,0.0,28407,61.354175169373924,0.0,24.51,Major opportunity
+E07000093,Test Valley,Local authority,England,Test Valley,62034,35954,0.0,26080,57.95853886578328,0.0,24.45,Major opportunity
+E06000047,County Durham,Local authority,England,County Durham,268929,226085,0.0,42844,84.0686575267078,0.0,24.38,Major opportunity
+E07000236,Redditch,Local authority,England,Redditch,40342,20012,0.0,20330,49.60586981309801,0.0,24.29,Major opportunity
+E07000094,Winchester,Local authority,England,Winchester,61397,35867,0.0,25530,58.41816375392934,0.0,24.05,Major opportunity
+E06000056,Central Bedfordshire,Local authority,England,Central Bedfordshire,140078,104251,0.0,35827,74.4235354588158,0.0,24.02,Major opportunity
+S12000041,Angus,Local authority,Scotland,Angus,62607,36899,0.0,25708,58.93749900170907,0.0,23.98,Major opportunity
+W06000023,Powys,Local authority,Wales,Powys,71500,44431,0.0,27069,62.141258741258746,0.0,23.65,Major opportunity
+S12000039,West Dunbartonshire,Local authority,Scotland,West Dunbartonshire,48494,26644,0.0,21850,54.94287953148843,0.0,23.39,Major opportunity
+E06000002,Middlesbrough,Local authority,England,Middlesbrough,71097,44519,0.0,26578,62.61726936438949,0.0,23.28,Major opportunity
+E07000137,East Lindsey,Local authority,England,East Lindsey,76235,48795,0.0,27440,64.0060339738965,0.0,23.26,Major opportunity
+E07000146,King'S Lynn And West Norfolk,Local authority,England,King'S Lynn And West Norfolk,80857,52787,0.0,28070,65.28439096182149,0.0,23.17,Major opportunity
+E07000071,Colchester,Local authority,England,Colchester,91412,62171,0.0,29241,68.01185839933488,0.0,22.9,Major opportunity
+E07000084,Basingstoke And Deane,Local authority,England,Basingstoke And Deane,86328,57795,0.0,28533,66.94815123714206,0.0,22.89,Major opportunity
+S12000006,Dumfries And Galloway,Local authority,Scotland,Dumfries And Galloway,83562,55912,0.0,27650,66.91079677365309,0.0,22.49,Major opportunity
+E07000044,South Hams,Local authority,England,South Hams,51519,30191,0.0,21328,58.60168093324793,0.0,22.05,Major opportunity
+E08000023,South Tyneside,Local authority,England,South Tyneside,76597,50844,0.0,25753,66.37857879551419,0.0,21.77,Major opportunity
+E06000023,"Bristol, City Of",Local authority,England,"Bristol, City Of",219825,183259,0.0,36566,83.36585920618674,0.0,21.68,Major opportunity
+E07000180,Vale Of White Horse,Local authority,England,Vale Of White Horse,67555,43464,0.0,24091,64.33868699578122,0.0,21.61,Major opportunity
+E07000207,Elmbridge,Local authority,England,Elmbridge,62685,39580,0.0,23105,63.14110233708223,0.0,21.51,Major opportunity
+E07000085,East Hampshire,Local authority,England,East Hampshire,60335,37817,0.0,22518,62.67837905030248,0.0,21.38,Major opportunity
+E07000241,Welwyn Hatfield,Local authority,England,Welwyn Hatfield,52174,31358,0.0,20816,60.1027331621114,0.0,21.36,Major opportunity
+E07000043,North Devon,Local authority,England,North Devon,54147,32967,0.0,21180,60.88425951576265,0.0,21.3,Major opportunity
+E09000005,Brent,Local authority,England,Brent,144962,112835,0.0,32127,77.83764020915827,0.0,21.28,Major opportunity
+E09000027,Richmond Upon Thames,Local authority,England,Richmond Upon Thames,89806,63206,0.0,26600,70.38059817829544,0.0,20.96,Major opportunity
+E07000012,South Cambridgeshire,Local authority,England,South Cambridgeshire,77917,53029,0.0,24888,68.05831846708678,0.0,20.86,Major opportunity
+E07000243,Stevenage,Local authority,England,Stevenage,40195,22832,0.0,17363,56.80308496081602,0.0,20.75,Major opportunity
+E09000023,Lewisham,Local authority,England,Lewisham,142852,112076,0.0,30776,78.45602441687902,0.0,20.47,Major opportunity
+S12000018,Inverclyde,Local authority,Scotland,Inverclyde,42546,24812,0.0,17734,58.318055751421994,0.0,20.47,Major opportunity
+E07000203,Mid Suffolk,Local authority,England,Mid Suffolk,53972,33655,0.0,20317,62.356407025865266,0.0,20.46,Major opportunity
+E07000143,Breckland,Local authority,England,Breckland,70310,47308,0.0,23002,67.28488124022188,0.0,20.22,Major opportunity
+E09000020,Kensington And Chelsea,Local authority,England,Kensington And Chelsea,97970,71561,0.0,26409,73.04378891497397,0.0,20.07,Major opportunity
+E08000003,Manchester,Local authority,England,Manchester,262217,227214,0.0,35003,86.65113245899389,0.0,19.97,Major opportunity
+E07000176,Rushcliffe,Local authority,England,Rushcliffe,59030,38237,0.0,20793,64.77553786210402,0.0,19.95,Major opportunity
+E07000209,Guildford,Local authority,England,Guildford,61772,40498,0.0,21274,65.56044809946255,0.0,19.94,Major opportunity
+E09000011,Greenwich,Local authority,England,Greenwich,129643,100636,0.0,29007,77.62547920057389,0.0,19.9,Major opportunity
+W06000010,Carmarthenshire,Local authority,Wales,Carmarthenshire,95119,69415,0.0,25704,72.97700774818911,0.0,19.77,Major opportunity
+W06000008,Ceredigion,Local authority,Wales,Ceredigion,39489,23163,0.0,16326,58.6568411456355,0.0,19.72,Major opportunity
+E07000096,Dacorum,Local authority,England,Dacorum,71169,48633,0.0,22536,68.33452767356573,0.0,19.69,Major opportunity
+E06000057,Northumberland,Local authority,England,Northumberland,174759,143409,0.0,31350,82.06100973340429,0.0,19.66,Major opportunity
+E07000225,Chichester,Local authority,England,Chichester,65495,44097,0.0,21398,67.32880372547523,0.0,19.47,Major opportunity
+E07000215,Tandridge,Local authority,England,Tandridge,39630,23561,0.0,16069,59.45243502397174,0.0,19.36,Major opportunity
+E06000022,Bath And North East Somerset,Local authority,England,Bath And North East Somerset,90941,66262,0.0,24679,72.86262521854829,0.0,19.33,Major opportunity
+E06000026,Plymouth,Local authority,England,Plymouth,128670,100559,0.0,28111,78.1526385326805,0.0,19.33,Major opportunity
+S12000020,Moray,Local authority,Scotland,Moray,51564,33078,0.0,18486,64.14940656271818,0.0,19.07,Major opportunity
+E07000110,Maidstone,Local authority,England,Maidstone,79910,57037,0.0,22873,71.37654861719435,0.0,18.94,Major opportunity
+S12000014,Falkirk,Local authority,Scotland,Falkirk,77807,55224,0.0,22583,70.9756191602298,0.0,18.92,Major opportunity
+W06000009,Pembrokeshire,Local authority,Wales,Pembrokeshire,67326,46589,0.0,20737,69.19912069631347,0.0,18.6,Major opportunity
+E07000105,Ashford,Local authority,England,Ashford,61757,41980,0.0,19777,67.97609987531777,0.0,18.52,Major opportunity
+E07000142,West Lindsey,Local authority,England,West Lindsey,48959,31514,0.0,17445,64.36814477419883,0.0,18.52,Major opportunity
+E07000046,Torridge,Local authority,England,Torridge,36314,21796,0.0,14518,60.02092856749462,0.0,18.47,Major opportunity
+E09000030,Tower Hamlets,Local authority,England,Tower Hamlets,158445,129886,0.0,28559,81.97544889393797,0.0,18.39,Major opportunity
+E08000024,Sunderland,Local authority,England,Sunderland,141891,114347,0.0,27544,80.58791607642486,0.0,18.34,Major opportunity
+E07000216,Waverley,Local authority,England,Waverley,59866,40723,0.0,19143,68.02358600875287,0.0,18.21,Major opportunity
+E09000028,Southwark,Local authority,England,Southwark,157267,129047,0.0,28220,82.05599394660037,0.0,18.21,Major opportunity
+E09000021,Kingston Upon Thames,Local authority,England,Kingston Upon Thames,72866,51865,0.0,21001,71.17860181703401,0.0,18.13,Major opportunity
+E07000242,East Hertfordshire,Local authority,England,East Hertfordshire,71295,50642,0.0,20653,71.03162914650396,0.0,18.01,Major opportunity
+E07000149,South Norfolk,Local authority,England,South Norfolk,70435,49964,0.0,20471,70.9363242706041,0.0,17.95,Major opportunity
+W06000002,Gwynedd,Local authority,Wales,Gwynedd,68491,48436,0.0,20055,70.71878056970989,0.0,17.83,Major opportunity
+E07000099,North Hertfordshire,Local authority,England,North Hertfordshire,63390,44103,0.0,19287,69.5740653099858,0.0,17.81,Major opportunity
+E07000111,Sevenoaks,Local authority,England,Sevenoaks,54401,36657,0.0,17744,67.38295251925516,0.0,17.76,Major opportunity
+E08000037,Gateshead,Local authority,England,Gateshead,103311,79585,0.0,23726,77.03439130392698,0.0,17.63,Major opportunity
+E07000219,Nuneaton And Bedworth,Local authority,England,Nuneaton And Bedworth,64700,45457,0.0,19243,70.25811437403401,0.0,17.59,Major opportunity
+E07000066,Basildon,Local authority,England,Basildon,84971,63159,0.0,21812,74.33006555177649,0.0,17.56,Major opportunity
+E07000035,Derbyshire Dales,Local authority,England,Derbyshire Dales,39191,24825,0.0,14366,63.34362481181904,0.0,17.4,Major opportunity
+E07000090,Havant,Local authority,England,Havant,59774,41503,0.0,18271,69.4331983805668,0.0,17.39,Major opportunity
+E07000091,New Forest,Local authority,England,New Forest,88661,66845,0.0,21816,75.39391615253606,0.0,17.24,Major opportunity
+E09000015,Harrow,Local authority,England,Harrow,102944,79956,0.0,22988,77.66941249611439,0.0,17.1,Major opportunity
+E06000055,Bedford,Local authority,England,Bedford,85658,64356,0.0,21302,75.13133624413365,0.0,17.08,Major opportunity
+E07000139,North Kesteven,Local authority,England,North Kesteven,58144,40473,0.0,17671,69.60821408915795,0.0,17.06,Major opportunity
+W06000016,Rhondda Cynon Taf,Local authority,Wales,Rhondda Cynon Taf,121242,96986,0.0,24256,79.99373154517411,0.0,16.99,Major opportunity
+E07000226,Crawley,Local authority,England,Crawley,50361,34259,0.0,16102,68.02684617064793,0.0,16.8,Major opportunity
+E09000017,Hillingdon,Local authority,England,Hillingdon,124948,100731,0.0,24217,80.61833722828696,0.0,16.79,Major opportunity
+E09000022,Lambeth,Local authority,England,Lambeth,157530,131568,0.0,25962,83.51932965149496,0.0,16.72,Major opportunity
+E07000086,Eastleigh,Local authority,England,Eastleigh,63831,45683,0.0,18148,71.56867352853628,0.0,16.69,Major opportunity
+E08000012,Liverpool,Local authority,England,Liverpool,237006,208469,0.0,28537,87.95937655586779,0.0,16.59,Major opportunity
+E06000035,Medway,Local authority,England,Medway,126910,103005,0.0,23905,81.1638168781026,0.0,16.48,Major opportunity
+S12000028,South Ayrshire,Local authority,Scotland,South Ayrshire,60868,43372,0.0,17496,71.25583229283039,0.0,16.48,Major opportunity
+E07000197,Stafford,Local authority,England,Stafford,68153,49672,0.0,18481,72.88307191172802,0.0,16.45,Major opportunity
+E07000040,East Devon,Local authority,England,East Devon,79343,59631,0.0,19712,75.15596839040622,0.0,16.34,Major opportunity
+E07000106,Canterbury,Local authority,England,Canterbury,77452,58057,0.0,19395,74.95868408820947,0.0,16.25,Major opportunity
+E07000065,Wealden,Local authority,England,Wealden,78127,58809,0.0,19318,75.2735929960193,0.0,16.12,Major opportunity
+E06000064,Westmorland And Furness,Local authority,England,Westmorland And Furness,129530,105992,0.0,23538,81.8281479194009,0.0,16.11,Major opportunity
+E06000063,Cumberland,Local authority,England,Cumberland,149392,124806,0.0,24586,83.54262611117062,0.0,16.08,Major opportunity
+E07000045,Teignbridge,Local authority,England,Teignbridge,68957,50916,0.0,18041,73.83731890888525,0.0,15.96,Major opportunity
+E09000025,Newham,Local authority,England,Newham,138461,114951,0.0,23510,83.02048952412594,0.0,15.74,Major opportunity
+E09000032,Wandsworth,Local authority,England,Wandsworth,167759,142907,0.0,24852,85.1858916660209,0.0,15.71,Major opportunity
+E07000072,Epping Forest,Local authority,England,Epping Forest,62805,45891,0.0,16914,73.0690231669453,0.0,15.67,Major opportunity
+E07000113,Swale,Local authority,England,Swale,68734,51069,0.0,17665,74.29947333197543,0.0,15.65,Major opportunity
+E07000179,South Oxfordshire,Local authority,England,South Oxfordshire,70912,53095,0.0,17817,74.87449232851986,0.0,15.54,Major opportunity
+E07000042,Mid Devon,Local authority,England,Mid Devon,38610,25932,0.0,12678,67.16394716394717,0.0,15.48,Major opportunity
+E09000029,Sutton,Local authority,England,Sutton,88779,69344,0.0,19435,78.10856170941327,0.0,15.32,Major opportunity
+W06000001,Isle Of Anglesey,Local authority,Wales,Isle Of Anglesey,38434,25984,0.0,12450,67.60680647343497,0.0,15.24,Major opportunity
+E07000047,West Devon,Local authority,England,West Devon,28563,18348,0.0,10215,64.23694990022057,0.0,15.21,Major opportunity
+E06000053,Isles Of Scilly,Local authority,England,Isles Of Scilly,1711,859,0.0,852,50.20455873758036,0.0,15.08,Moderate coverage
+S12000049,Glasgow City,Local authority,Scotland,Glasgow City,346722,318929,0.0,27793,91.98406792761925,0.0,15.03,Major opportunity
+E07000011,Huntingdonshire,Local authority,England,Huntingdonshire,88819,69987,0.0,18832,78.79732940024094,0.0,14.84,Major opportunity
+E08000014,Sefton,Local authority,England,Sefton,140780,118595,0.0,22185,84.24136951271487,0.0,14.76,Major opportunity
+E07000198,Staffordshire Moorlands,Local authority,England,Staffordshire Moorlands,47700,34063,0.0,13637,71.41090146750524,0.0,14.65,Major opportunity
+E07000211,Reigate And Banstead,Local authority,England,Reigate And Banstead,66155,49945,0.0,16210,75.49693900687778,0.0,14.61,Major opportunity
+S12000026,Scottish Borders,Local authority,Scotland,Scottish Borders,66240,50114,0.0,16126,75.65519323671498,0.0,14.53,Major opportunity
+E08000035,Leeds,Local authority,England,Leeds,394243,366859,0.0,27384,93.05403012862625,0.0,14.52,Major opportunity
+E07000079,Cotswold,Local authority,England,Cotswold,49519,35733,0.0,13786,72.16018094064904,0.0,14.49,Major opportunity
+E07000227,Horsham,Local authority,England,Horsham,69757,53258,0.0,16499,76.34789340137907,0.0,14.49,Major opportunity
+E07000245,West Suffolk,Local authority,England,West Suffolk,88383,70061,0.0,18322,79.26976907323807,0.0,14.46,Major opportunity
+E07000107,Dartford,Local authority,England,Dartford,53329,39197,0.0,14132,73.50034690318589,0.0,14.25,Major opportunity
+E07000098,Hertsmere,Local authority,England,Hertsmere,47748,34502,0.0,13246,72.25852391723213,0.0,14.21,Major opportunity
+E07000115,Tonbridge And Malling,Local authority,England,Tonbridge And Malling,59726,44774,0.0,14952,74.9656765897599,0.0,14.19,Major opportunity
+E08000029,Solihull,Local authority,England,Solihull,100243,81348,0.0,18895,81.15080354737987,0.0,14.16,Major opportunity
+E07000210,Mole Valley,Local authority,England,Mole Valley,40988,29000,0.0,11988,70.75241534107543,0.0,14.08,Major opportunity
+E07000112,Folkestone And Hythe,Local authority,England,Folkestone And Hythe,56402,42003,0.0,14399,74.47076344810468,0.0,14.08,Major opportunity
+E09000012,Hackney,Local authority,England,Hackney,129955,109332,0.0,20623,84.13066061328922,0.0,14.07,Major opportunity
+E07000108,Dover,Local authority,England,Dover,57998,43405,0.0,14593,74.83878754439807,0.0,14.06,Major opportunity
+W06000015,Cardiff,Local authority,Wales,Cardiff,172880,150432,0.0,22448,87.01527070800556,0.0,14.05,Major opportunity
+E07000148,Norwich,Local authority,England,Norwich,59400,44673,0.0,14727,75.20707070707071,0.0,14.01,Major opportunity
+S12000040,West Lothian,Local authority,Scotland,West Lothian,91512,73554,0.0,17958,80.3763440860215,0.0,13.96,Major opportunity
+E07000194,Lichfield,Local authority,England,Lichfield,52112,38461,0.0,13651,73.80449800429844,0.0,13.93,Major opportunity
+S12000008,East Ayrshire,Local authority,Scotland,East Ayrshire,63107,48099,0.0,15008,76.2181691412997,0.0,13.84,Major opportunity
+E07000109,Gravesham,Local authority,England,Gravesham,47069,34345,0.0,12724,72.96734581146826,0.0,13.76,Major opportunity
+E06000040,Windsor And Maidenhead,Local authority,England,Windsor And Maidenhead,69820,54153,0.0,15667,77.56087081065597,0.0,13.74,Major opportunity
+E07000141,South Kesteven,Local authority,England,South Kesteven,72457,56558,0.0,15899,78.05733055467381,0.0,13.7,Major opportunity
+E07000116,Tunbridge Wells,Local authority,England,Tunbridge Wells,55444,41570,0.0,13874,74.97655291825987,0.0,13.69,Major opportunity
+W06000020,Torfaen,Local authority,Wales,Torfaen,47028,34403,0.0,12625,73.15429106064472,0.0,13.65,Major opportunity
+E07000133,Melton,Local authority,England,Melton,26713,17954,0.0,8759,67.21072137161681,0.0,13.65,Major opportunity
+E06000037,West Berkshire,Local authority,England,West Berkshire,74766,58798,0.0,15968,78.64269855281812,0.0,13.56,Major opportunity
+E07000235,Malvern Hills,Local authority,England,Malvern Hills,40643,29161,0.0,11482,71.74913269197648,0.0,13.55,Major opportunity
+E07000244,East Suffolk,Local authority,England,East Suffolk,130344,110454,0.0,19890,84.74037930399558,0.0,13.54,Major opportunity
+E07000076,Tendring,Local authority,England,Tendring,79410,63027,0.0,16383,79.36909709104647,0.0,13.53,Major opportunity
+W06000012,Neath Port Talbot,Local authority,Wales,Neath Port Talbot,69680,54403,0.0,15277,78.07548794489094,0.0,13.41,Major opportunity
+E07000064,Rother,Local authority,England,Rother,50368,37476,0.0,12892,74.40438373570521,0.0,13.4,Major opportunity
+E07000114,Thanet,Local authority,England,Thanet,76458,60529,0.0,15929,79.16633968976431,0.0,13.38,Major opportunity
+E06000050,Cheshire West And Chester,Local authority,England,Cheshire West And Chester,176089,154684,0.0,21405,87.844215141207,0.0,13.32,Major opportunity
+E07000063,Lewes,Local authority,England,Lewes,49391,36729,0.0,12662,74.36375048085684,0.0,13.31,Major opportunity
+E07000132,Hinckley And Bosworth,Local authority,England,Hinckley And Bosworth,56664,43013,0.0,13651,75.90886629959057,0.0,13.3,Major opportunity
+E07000177,Cherwell,Local authority,England,Cherwell,76130,60404,0.0,15726,79.34322868777092,0.0,13.23,Major opportunity
+E09000019,Islington,Local authority,England,Islington,120274,101459,0.0,18815,84.35655253837072,0.0,13.16,Major opportunity
+E09000024,Merton,Local authority,England,Merton,92087,75125,0.0,16962,81.58046195445611,0.0,13.14,Major opportunity
+E07000083,Tewkesbury,Local authority,England,Tewkesbury,49942,37451,0.0,12491,74.98898722518122,0.0,13.04,Major opportunity
+E07000070,Chelmsford,Local authority,England,Chelmsford,86129,69857,0.0,16272,81.10740865446017,0.0,12.96,Major opportunity
+E07000144,Broadland,Local authority,England,Broadland,65407,51084,0.0,14323,78.1017322304952,0.0,12.96,Major opportunity
+E07000238,Wychavon,Local authority,England,Wychavon,65578,51269,0.0,14309,78.18018237823661,0.0,12.93,Major opportunity
+E07000081,Gloucester,Local authority,England,Gloucester,62442,48526,0.0,13916,77.7137183306108,0.0,12.88,Major opportunity
+E07000171,Bassetlaw,Local authority,England,Bassetlaw,61332,47591,0.0,13741,77.59570860236093,0.0,12.84,Major opportunity
+E06000019,"Herefordshire, County Of",Local authority,England,"Herefordshire, County Of",94488,77737,0.0,16751,82.27182287697909,0.0,12.83,Major opportunity
+E07000095,Broxbourne,Local authority,England,Broxbourne,44673,33172,0.0,11501,74.25514292749536,0.0,12.8,Major opportunity
+E06000012,North East Lincolnshire,Local authority,England,North East Lincolnshire,76553,61300,0.0,15253,80.07524198921008,0.0,12.8,Major opportunity
+E09000016,Havering,Local authority,England,Havering,115624,97749,0.0,17875,84.540406835951,0.0,12.67,Major opportunity
+E08000010,Wigan,Local authority,England,Wigan,160777,140968,0.0,19809,87.67920784689352,0.0,12.63,Major opportunity
+S12000045,East Dunbartonshire,Local authority,Scotland,East Dunbartonshire,51129,38907,0.0,12222,76.09575778912163,0.0,12.58,Major opportunity
+S12000021,North Ayrshire,Local authority,Scotland,North Ayrshire,74751,59961,0.0,14790,80.21431151422723,0.0,12.54,Major opportunity
+E07000214,Surrey Heath,Local authority,England,Surrey Heath,40131,29610,0.0,10521,73.78335949764521,0.0,12.49,Major opportunity
+E08000021,Newcastle Upon Tyne,Local authority,England,Newcastle Upon Tyne,145462,126472,0.0,18990,86.94504406649159,0.0,12.47,Major opportunity
+E07000200,Babergh,Local authority,England,Babergh,46716,35231,0.0,11485,75.41527528041784,0.0,12.45,Major opportunity
+E07000195,Newcastle-Under-Lyme,Local authority,England,Newcastle-Under-Lyme,62179,48784,0.0,13395,78.45735698547742,0.0,12.42,Major opportunity
+W06000011,Swansea,Local authority,Wales,Swansea,120319,102633,0.0,17686,85.3007421936685,0.0,12.35,Major opportunity
+E09000026,Redbridge,Local authority,England,Redbridge,113186,95977,0.0,17209,84.79582280494054,0.0,12.29,Major opportunity
+E09000004,Bexley,Local authority,England,Bexley,106226,89421,0.0,16805,84.17995594298947,0.0,12.28,Major opportunity
+E09000033,Westminster,Local authority,England,Westminster,164725,145405,0.0,19320,88.27136135984216,0.0,12.22,Major opportunity
+E06000061,North Northamptonshire,Local authority,England,North Northamptonshire,172223,152672,0.0,19551,88.64785771935223,0.0,12.21,Major opportunity
+E07000217,Woking,Local authority,England,Woking,46193,35033,0.0,11160,75.84049531314268,0.0,12.17,Major opportunity
+E07000089,Hart,Local authority,England,Hart,44658,33758,0.0,10900,75.59227909892964,0.0,12.12,Major opportunity
+E06000024,North Somerset,Local authority,England,North Somerset,106398,89906,0.0,16492,84.49970864113988,0.0,12.04,Major opportunity
+E07000140,South Holland,Local authority,England,South Holland,47597,36378,0.0,11219,76.42918671344833,0.0,12.02,Major opportunity
+E08000032,Bradford,Local authority,England,Bradford,236231,215569,0.0,20662,91.25347647006532,0.0,11.95,Major opportunity
+E08000022,North Tyneside,Local authority,England,North Tyneside,105743,89425,0.0,16318,84.56824565219448,0.0,11.94,Major opportunity
+E07000224,Arun,Local authority,England,Arun,83410,68635,0.0,14775,82.28629660712144,0.0,11.91,Major opportunity
+E08000039,Sheffield,Local authority,England,Sheffield,269317,248454,0.0,20863,92.2533668502174,0.0,11.74,Major opportunity
+E08000007,Stockport,Local authority,England,Stockport,142123,124439,0.0,17684,87.55725674239919,0.0,11.68,Major opportunity
+S12000030,Stirling,Local authority,Scotland,Stirling,47991,37039,0.0,10952,77.17905440603447,0.0,11.67,Major opportunity
+E08000030,Walsall,Local authority,England,Walsall,120545,103811,0.0,16734,86.1180472022896,0.0,11.67,Major opportunity
+E07000041,Exeter,Local authority,England,Exeter,63219,50540,0.0,12679,79.94432053654755,0.0,11.64,Major opportunity
+E07000077,Uttlesford,Local authority,England,Uttlesford,42085,32072,0.0,10013,76.20767494356659,0.0,11.53,Major opportunity
+E07000082,Stroud,Local authority,England,Stroud,60255,48134,0.0,12121,79.88382706829309,0.0,11.4,Major opportunity
+E07000131,Harborough,Local authority,England,Harborough,47221,36808,0.0,10413,77.94837042841108,0.0,11.19,Major opportunity
+E09000007,Camden,Local authority,England,Camden,122089,106084,0.0,16005,86.8907108748536,0.0,11.1,Major opportunity
+E07000228,Mid Sussex,Local authority,England,Mid Sussex,73509,60610,0.0,12899,82.45248881089391,0.0,10.99,Major opportunity
+E07000240,St Albans,Local authority,England,St Albans,66276,54118,0.0,12158,81.65550123725028,0.0,10.89,Major opportunity
+E08000001,Bolton,Local authority,England,Bolton,137545,121218,0.0,16327,88.12970300628885,0.0,10.88,Major opportunity
+E07000212,Runnymede,Local authority,England,Runnymede,40184,31016,0.0,9168,77.18494923352578,0.0,10.84,Major opportunity
+E07000134,North West Leicestershire,Local authority,England,North West Leicestershire,51974,41328,0.0,10646,79.5166814176319,0.0,10.83,Major opportunity
+E07000221,Stratford-On-Avon,Local authority,England,Stratford-On-Avon,71844,59320,0.0,12524,82.56778575803129,0.0,10.78,Major opportunity
+E08000033,Calderdale,Local authority,England,Calderdale,104549,89849,0.0,14700,85.93960726549274,0.0,10.78,Major opportunity
+E07000218,North Warwickshire,Local authority,England,North Warwickshire,31671,23856,0.0,7815,75.32442928862366,0.0,10.77,Major opportunity
+E09000013,Hammersmith And Fulham,Local authority,England,Hammersmith And Fulham,96829,82736,0.0,14093,85.44547604539963,0.0,10.65,Major opportunity
+W06000021,Monmouthshire,Local authority,Wales,Monmouthshire,46720,36913,0.0,9807,79.0089897260274,0.0,10.59,Major opportunity
+E06000027,Torbay,Local authority,England,Torbay,77760,64998,0.0,12762,83.58796296296296,0.0,10.59,Major opportunity
+E06000009,Blackpool,Local authority,England,Blackpool,79872,67001,0.0,12871,83.88546674679486,0.0,10.55,Major opportunity
+E07000175,Newark And Sherwood,Local authority,England,Newark And Sherwood,62078,50791,0.0,11287,81.818035374851,0.0,10.43,Major opportunity
+E09000031,Waltham Forest,Local authority,England,Waltham Forest,116847,102106,0.0,14741,87.38435732196804,0.0,10.37,Major opportunity
+E06000041,Wokingham,Local authority,England,Wokingham,78179,65830,0.0,12349,84.2041980583021,0.0,10.21,Major opportunity
+E06000015,Derby,Local authority,England,Derby,122861,108124,0.0,14737,88.00514402454806,0.0,10.18,Major opportunity
+W06000019,Blaenau Gwent,Local authority,Wales,Blaenau Gwent,35720,27729,0.0,7991,77.62877939529676,0.0,10.16,Major opportunity
+E07000193,East Staffordshire,Local authority,England,East Staffordshire,59419,48762,0.0,10657,82.06465945236371,0.0,10.07,Major opportunity
+E07000080,Forest Of Dean,Local authority,England,Forest Of Dean,43509,34575,0.0,8934,79.46631731365925,0.0,10.05,Major opportunity
+E08000027,Dudley,Local authority,England,Dudley,149747,134280,0.0,15467,89.67124550074459,0.0,10.02,Major opportunity
+E06000018,Nottingham,Local authority,England,Nottingham,146492,131221,0.0,15271,89.57553996122655,0.0,9.95,Major opportunity
+E07000223,Adur,Local authority,England,Adur,30449,23430,0.0,7019,76.9483398469572,0.0,9.92,Major opportunity
+E07000234,Bromsgrove,Local authority,England,Bromsgrove,45875,36831,0.0,9044,80.28555858310627,0.0,9.86,Major opportunity
+E06000014,York,Local authority,England,York,97922,84820,0.0,13102,86.61996282755663,0.0,9.84,Major opportunity
+E07000213,Spelthorne,Local authority,England,Spelthorne,46582,37510,0.0,9072,80.52466618006956,0.0,9.8,Major opportunity
+E08000038,Barnsley,Local authority,England,Barnsley,120747,106910,0.0,13837,88.5405020414586,0.0,9.6,Major opportunity
+W06000004,Denbighshire,Local authority,Wales,Denbighshire,51085,41795,0.0,9290,81.8146226876774,0.0,9.51,Major opportunity
+S12000042,Dundee City,Local authority,Scotland,Dundee City,81909,70269,0.0,11640,85.78910742409259,0.0,9.41,Major opportunity
+E08000005,Rochdale,Local authority,England,Rochdale,104136,91374,0.0,12762,87.74487209034339,0.0,9.34,Major opportunity
+E07000239,Wyre Forest,Local authority,England,Wyre Forest,50157,41219,0.0,8938,82.17995494148374,0.0,9.24,Major opportunity
+E06000034,Thurrock,Local authority,England,Thurrock,73440,62627,0.0,10813,85.27641612200436,0.0,9.18,Major opportunity
+E06000021,Stoke-On-Trent,Local authority,England,Stoke-On-Trent,125810,112566,0.0,13244,89.47301486368333,0.0,9.05,Major opportunity
+E07000136,Boston,Local authority,England,Boston,34891,27901,0.0,6990,79.96618039035855,0.0,9.0,Major opportunity
+E06000044,Portsmouth,Local authority,England,Portsmouth,95584,83730,0.0,11854,87.59834281888182,0.0,8.96,Major opportunity
+E07000145,Great Yarmouth,Local authority,England,Great Yarmouth,50682,41968,0.0,8714,82.80651907975218,0.0,8.95,Major opportunity
+E08000006,Salford,Local authority,England,Salford,139912,126530,0.0,13382,90.43541654754416,0.0,8.82,Major opportunity
+E07000123,Preston,Local authority,England,Preston,74770,64300,0.0,10470,85.99705764343987,0.0,8.8,Major opportunity
+W06000024,Merthyr Tydfil,Local authority,Wales,Merthyr Tydfil,28884,22861,0.0,6023,79.14762498268938,0.0,8.8,Major opportunity
+E07000196,South Staffordshire,Local authority,England,South Staffordshire,51799,43306,0.0,8493,83.60393057781039,0.0,8.6,Major opportunity
+E07000173,Gedling,Local authority,England,Gedling,57888,48897,0.0,8991,84.46828358208955,0.0,8.58,Major opportunity
+E08000034,Kirklees,Local authority,England,Kirklees,202870,188524,0.0,14346,92.9284763641741,0.0,8.52,Major opportunity
+E06000046,Isle Of Wight,Local authority,England,Isle Of Wight,79805,69423,0.0,10382,86.9907900507487,0.0,8.46,Major opportunity
+E07000181,West Oxfordshire,Local authority,England,West Oxfordshire,56719,48054,0.0,8665,84.7229323507114,0.0,8.35,Major opportunity
+N09000003,Belfast,Local authority,Northern Ireland,Belfast,174558,161063,0.0,13495,92.2690452457063,0.0,8.32,Major opportunity
+E08000028,Sandwell,Local authority,England,Sandwell,145257,132512,0.0,12745,91.2258961702362,0.0,8.29,Major opportunity
+E07000062,Hastings,Local authority,England,Hastings,47324,39540,0.0,7784,83.55168624799256,0.0,8.29,Major opportunity
+W06000006,Wrexham,Local authority,Wales,Wrexham,67484,58122,0.0,9362,86.12708197498667,0.0,8.25,Major opportunity
+E07000010,Fenland,Local authority,England,Fenland,50659,42651,0.0,8008,84.19234489429321,0.0,8.2,Major opportunity
+E07000009,East Cambridgeshire,Local authority,England,East Cambridgeshire,43045,35907,0.0,7138,83.4173539319317,0.0,8.03,Major opportunity
+E06000017,Rutland,Local authority,England,Rutland,19193,15126,0.0,4067,78.80998280623143,0.0,7.99,Lower priority
+E07000126,South Ribble,Local authority,England,South Ribble,56125,47923,0.0,8202,85.38619153674833,0.0,7.94,Major opportunity
+E07000078,Cheltenham,Local authority,England,Cheltenham,60845,52333,0.0,8512,86.01035417865067,0.0,7.89,Major opportunity
+W06000022,Newport,Local authority,Wales,Newport,75576,66193,0.0,9383,87.58468296813803,0.0,7.82,Major opportunity
+E07000074,Maldon,Local authority,England,Maldon,32172,26438,0.0,5734,82.17704836503792,0.0,7.75,Major opportunity
+E07000127,West Lancashire,Local authority,England,West Lancashire,54725,46859,0.0,7866,85.62631338510735,0.0,7.71,Major opportunity
+E07000121,Lancaster,Local authority,England,Lancaster,69517,60650,0.0,8867,87.24484658428874,0.0,7.69,Major opportunity
+E07000174,Mansfield,Local authority,England,Mansfield,54727,46908,0.0,7819,85.71271949860215,0.0,7.66,Major opportunity
+E06000062,West Northamptonshire,Local authority,England,West Northamptonshire,196164,183402,0.0,12762,93.49421912277482,0.0,7.62,Major opportunity
+W06000014,Vale Of Glamorgan,Local authority,Wales,Vale Of Glamorgan,65626,57172,0.0,8454,87.11791058421967,0.0,7.53,Major opportunity
+E07000130,Charnwood,Local authority,England,Charnwood,82242,72959,0.0,9283,88.71257994698573,0.0,7.44,Major opportunity
+E07000037,High Peak,Local authority,England,High Peak,47534,40550,0.0,6984,85.30735894307233,0.0,7.39,Major opportunity
+E06000005,Darlington,Local authority,England,Darlington,56837,49286,0.0,7551,86.71464011119518,0.0,7.23,Major opportunity
+E07000069,Castle Point,Local authority,England,Castle Point,41984,35723,0.0,6261,85.08717606707317,0.0,7.13,Major opportunity
+E07000172,Broxtowe,Local authority,England,Broxtowe,53924,46829,0.0,7095,86.84259327943032,0.0,6.99,Major opportunity
+E07000068,Brentwood,Local authority,England,Brentwood,36910,31259,0.0,5651,84.68978596586291,0.0,6.96,Major opportunity
+W06000018,Caerphilly,Local authority,Wales,Caerphilly,84772,76020,0.0,8752,89.67583636106261,0.0,6.9,Major opportunity
+E07000138,Lincoln,Local authority,England,Lincoln,50848,44120,0.0,6728,86.76840780365009,0.0,6.84,Major opportunity
+E07000102,Three Rivers,Local authority,England,Three Rivers,40594,34735,0.0,5859,85.5668325368281,0.0,6.8,Major opportunity
+E09000002,Barking And Dagenham,Local authority,England,Barking And Dagenham,85709,77130,0.0,8579,89.99054941721405,0.0,6.73,Major opportunity
+S12000010,East Lothian,Local authority,Scotland,East Lothian,57359,50333,0.0,7026,87.75083247615892,0.0,6.68,Major opportunity
+W06000003,Conwy,Local authority,Wales,Conwy,60358,53297,0.0,7061,88.30146790814804,0.0,6.53,Major opportunity
+E07000170,Ashfield,Local authority,England,Ashfield,61160,54156,0.0,7004,88.54807063440157,0.0,6.43,Major opportunity
+E07000034,Chesterfield,Local authority,England,Chesterfield,55160,48526,0.0,6634,87.97316896301668,0.0,6.43,Major opportunity
+E06000006,Halton,Local authority,England,Halton,63134,56030,0.0,7104,88.74774289606235,0.0,6.42,Major opportunity
+E06000008,Blackburn With Darwen,Local authority,England,Blackburn With Darwen,70158,62691,0.0,7467,89.35688018472591,0.0,6.4,Major opportunity
+E08000008,Tameside,Local authority,England,Tameside,115875,106834,0.0,9041,92.19762675296656,0.0,6.28,Major opportunity
+E07000038,North East Derbyshire,Local authority,England,North East Derbyshire,51533,45305,0.0,6228,87.91454019754332,0.0,6.26,Major opportunity
+E07000032,Amber Valley,Local authority,England,Amber Valley,64565,57574,0.0,6991,89.17215209478819,0.0,6.24,Major opportunity
+E08000036,Wakefield,Local authority,England,Wakefield,174519,164422,0.0,10097,94.21438353417106,0.0,6.16,Major opportunity
+S12000033,Aberdeen City,Local authority,Scotland,Aberdeen City,132364,123173,0.0,9191,93.05626907618387,0.0,6.09,Major opportunity
+E07000067,Braintree,Local authority,England,Braintree,75805,68485,0.0,7320,90.34364487830618,0.0,6.04,Major opportunity
+E07000103,Watford,Local authority,England,Watford,45444,39878,0.0,5566,87.75195845436141,0.0,6.0,Major opportunity
+E07000008,Cambridge,Local authority,England,Cambridge,61820,55269,0.0,6551,89.40310579100614,0.0,5.97,Major opportunity
+E09000001,City Of London,Local authority,England,City Of London,10639,8755,0.0,1884,82.29156875646207,0.0,5.94,Lower priority
+E06000011,East Riding Of Yorkshire,Local authority,England,East Riding Of Yorkshire,175994,166255,0.0,9739,94.4662886234758,0.0,5.92,Major opportunity
+E08000009,Trafford,Local authority,England,Trafford,111129,102855,0.0,8274,92.55459870960775,0.0,5.82,Major opportunity
+E07000124,Ribble Valley,Local authority,England,Ribble Valley,32358,27998,0.0,4360,86.5257432474195,0.0,5.81,Lower priority
+W06000005,Flintshire,Local authority,Wales,Flintshire,76379,69319,0.0,7060,90.75662158446693,0.0,5.79,Major opportunity
+E06000007,Warrington,Local authority,England,Warrington,102417,94468,0.0,7949,92.23859320230041,0.0,5.76,Major opportunity
+E06000032,Luton,Local authority,England,Luton,88874,81382,0.0,7492,91.57008798973828,0.0,5.75,Major opportunity
+E08000015,Wirral,Local authority,England,Wirral,160608,151552,0.0,9056,94.3614265789998,0.0,5.64,Major opportunity
+S12000005,Clackmannanshire,Local authority,Scotland,Clackmannanshire,26782,23094,0.0,3688,86.22955716526025,0.0,5.59,Lower priority
+S12000038,Renfrewshire,Local authority,Scotland,Renfrewshire,98798,91318,0.0,7480,92.42899653839146,0.0,5.49,Major opportunity
+E07000118,Chorley,Local authority,England,Chorley,56684,50902,0.0,5782,89.79959071342883,0.0,5.49,Major opportunity
+S12000011,East Renfrewshire,Local authority,Scotland,East Renfrewshire,42896,38079,0.0,4817,88.77051473330847,0.0,5.35,Lower priority
+E06000016,Leicester,Local authority,England,Leicester,148930,140520,0.0,8410,94.35305176928759,0.0,5.34,Major opportunity
+E08000017,Doncaster,Local authority,England,Doncaster,152377,144022,0.0,8355,94.51688903180926,0.0,5.27,Major opportunity
+E07000199,Tamworth,Local authority,England,Tamworth,37121,32843,0.0,4278,88.47552598259745,0.0,5.19,Lower priority
+N09000002,"Armagh City, Banbridge And Craigavon",Local authority,Northern Ireland,"Armagh City, Banbridge And Craigavon",97766,90782,0.0,6984,92.85641224965735,0.0,5.13,Major opportunity
+E07000033,Bolsover,Local authority,England,Bolsover,40964,36497,0.0,4467,89.09530319304756,0.0,5.09,Lower priority
+E08000002,Bury,Local authority,England,Bury,92057,85442,0.0,6615,92.8142346589613,0.0,4.97,Major opportunity
+N09000006,Fermanagh And Omagh,Local authority,Northern Ireland,Fermanagh And Omagh,55383,50370,0.0,5013,90.94848599750827,0.0,4.79,Major opportunity
+E06000030,Swindon,Local authority,England,Swindon,106022,99299,0.0,6723,93.65886325479617,0.0,4.77,Major opportunity
+E07000129,Blaby,Local authority,England,Blaby,46743,42292,0.0,4451,90.47771858887963,0.0,4.67,Lower priority
+E07000075,Rochford,Local authority,England,Rochford,39709,35679,0.0,4030,89.85116724168324,0.0,4.66,Lower priority
+E06000039,Slough,Local authority,England,Slough,59322,54256,0.0,5066,91.46016654866659,0.0,4.66,Major opportunity
+E07000092,Rushmoor,Local authority,England,Rushmoor,45277,41044,0.0,4233,90.65088234644521,0.0,4.52,Lower priority
+E08000018,Rotherham,Local authority,England,Rotherham,129292,122464,0.0,6828,94.71893079231506,0.0,4.5,Major opportunity
+E06000013,North Lincolnshire,Local authority,England,North Lincolnshire,82674,76964,0.0,5710,93.09335462176742,0.0,4.47,Major opportunity
+E07000208,Epsom And Ewell,Local authority,England,Epsom And Ewell,33911,30444,0.0,3467,89.77617882103152,0.0,4.42,Lower priority
+E07000087,Fareham,Local authority,England,Fareham,53634,49204,0.0,4430,91.74031397993811,0.0,4.28,Lower priority
+E08000004,Oldham,Local authority,England,Oldham,100701,94780,0.0,5921,94.12021727688901,0.0,4.26,Major opportunity
+E07000128,Wyre,Local authority,England,Wyre,59514,54979,0.0,4535,92.3799442148066,0.0,4.14,Lower priority
+E07000220,Rugby,Local authority,England,Rugby,54170,49952,0.0,4218,92.21340225216909,0.0,4.04,Lower priority
+W06000013,Bridgend,Local authority,Wales,Bridgend,68654,63910,0.0,4744,93.08998747341742,0.0,4.02,Lower priority
+E06000045,Southampton,Local authority,England,Southampton,116135,110282,0.0,5853,94.96017565763981,0.0,3.97,Major opportunity
+E07000039,South Derbyshire,Local authority,England,South Derbyshire,52037,47992,0.0,4045,92.22668485885043,0.0,3.96,Lower priority
+E08000011,Knowsley,Local authority,England,Knowsley,75708,70902,0.0,4806,93.65192582025678,0.0,3.88,Lower priority
+N09000004,Causeway Coast And Glens,Local authority,Northern Ireland,Causeway Coast And Glens,71646,67038,0.0,4608,93.56837785780085,0.0,3.82,Lower priority
+E08000013,St. Helens,Local authority,England,St. Helens,90219,85227,0.0,4992,94.46679745951518,0.0,3.72,Lower priority
+E07000061,Eastbourne,Local authority,England,Eastbourne,51764,47971,0.0,3793,92.67251371609613,0.0,3.71,Lower priority
+E06000031,Peterborough,Local authority,England,Peterborough,97053,91986,0.0,5067,94.77914129393218,0.0,3.66,Major opportunity
+E07000117,Burnley,Local authority,England,Burnley,46756,43214,0.0,3542,92.4245016682351,0.0,3.66,Lower priority
+S12000019,Midlothian,Local authority,Scotland,Midlothian,47006,43462,0.0,3544,92.46053695272944,0.0,3.65,Lower priority
+E07000088,Gosport,Local authority,England,Gosport,39455,36295,0.0,3160,91.99087568115574,0.0,3.62,Lower priority
+E07000125,Rossendale,Local authority,England,Rossendale,35605,32777,0.0,2828,92.0572953236905,0.0,3.44,Lower priority
+E07000229,Worthing,Local authority,England,Worthing,54689,51041,0.0,3648,93.32955438936533,0.0,3.44,Lower priority
+E07000036,Erewash,Local authority,England,Erewash,56638,53011,0.0,3627,93.59617218122109,0.0,3.35,Lower priority
+E07000122,Pendle,Local authority,England,Pendle,45223,42041,0.0,3182,92.96375738009421,0.0,3.34,Lower priority
+E08000031,Wolverhampton,Local authority,England,Wolverhampton,120254,115360,0.0,4894,95.93028090541686,0.0,3.24,Lower priority
+E07000237,Worcester,Local authority,England,Worcester,49864,46595,0.0,3269,93.44416813733355,0.0,3.23,Lower priority
+E07000119,Fylde,Local authority,England,Fylde,38853,36037,0.0,2816,92.75216842972227,0.0,3.23,Lower priority
+N09000005,Derry City And Strabane,Local authority,Northern Ireland,Derry City And Strabane,69311,65467,0.0,3844,94.45398277329716,0.0,3.2,Lower priority
+N09000009,Mid Ulster,Local authority,Northern Ireland,Mid Ulster,63313,59747,0.0,3566,94.36766540836796,0.0,3.09,Lower priority
+E06000042,Milton Keynes,Local authority,England,Milton Keynes,133693,128875,0.0,4818,96.39622119333099,0.0,3.06,Lower priority
+E08000026,Coventry,Local authority,England,Coventry,153694,148671,0.0,5023,96.73181776777233,0.0,3.06,Major opportunity
+N09000010,"Newry, Mourne And Down",Local authority,Northern Ireland,"Newry, Mourne And Down",79261,75368,0.0,3893,95.08837890008958,0.0,3.03,Lower priority
+E07000120,Hyndburn,Local authority,England,Hyndburn,41812,39063,0.0,2749,93.42533244044772,0.0,3.0,Lower priority
+E06000038,Reading,Local authority,England,Reading,79541,76004,0.0,3537,95.55323669554066,0.0,2.72,Lower priority
+N09000008,Mid And East Antrim,Local authority,Northern Ireland,Mid And East Antrim,66726,63522,0.0,3204,95.19827353655246,0.0,2.68,Lower priority
+N09000011,Ards And North Down,Local authority,Northern Ireland,Ards And North Down,79920,76460,0.0,3460,95.67067067067066,0.0,2.65,Lower priority
+N09000007,Lisburn And Castlereagh,Local authority,Northern Ireland,Lisburn And Castlereagh,67906,64791,0.0,3115,95.41277648514122,0.0,2.57,Lower priority
+E07000202,Ipswich,Local authority,England,Ipswich,66242,63191,0.0,3051,95.39416080432353,0.0,2.55,Lower priority
+E06000001,Hartlepool,Local authority,England,Hartlepool,49075,46947,0.0,2128,95.6637799286806,0.0,2.04,Lower priority
+E07000135,Oadby And Wigston,Local authority,England,Oadby And Wigston,26099,24792,0.0,1307,94.9921452929231,0.0,1.86,Lower priority
+N09000001,Antrim And Newtownabbey,Local authority,Northern Ireland,Antrim And Newtownabbey,66802,64626,0.0,2176,96.74261249663184,0.0,1.74,Lower priority
+E06000036,Bracknell Forest,Local authority,England,Bracknell Forest,56577,54707,0.0,1870,96.69476995952418,0.0,1.61,Lower priority
+E07000192,Cannock Chase,Local authority,England,Cannock Chase,49420,47735,0.0,1685,96.5904492108458,0.0,1.55,Lower priority
+E06000033,Southend-On-Sea,Local authority,England,Southend-On-Sea,87926,85855,0.0,2071,97.64461024042946,0.0,1.42,Lower priority
+E06000010,"Kingston Upon Hull, City Of",Local authority,England,"Kingston Upon Hull, City Of",131287,130749,0.0,538,99.59021075963348,0.0,0.12,Lower priority

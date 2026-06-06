@@ -9,6 +9,7 @@ Current implemented source:
 - Ofcom Connected Nations Spring 2026 fixed broadband coverage ZIP.
 - File used: `202601_fixed_laua_coverage_r1/202601_fixed_laua_coverage_r1.csv`.
 - Columns used: `All Premises` and `Number of premises with Full Fibre availability`.
+- Processed deployment file: `data/public/ofcom_laua_fttp_metrics_202601.csv`.
 
 Needed fields:
 
@@ -37,6 +38,7 @@ Current implemented source:
 
 - ONS Local Authority Districts December 2025 Boundaries UK BGC.
 - Feature key used for joining: `LAD25CD`.
+- Deployment file: `data/public/laua_boundaries_dec_2025.geojson`.
 
 ## Version 1 Rule
 

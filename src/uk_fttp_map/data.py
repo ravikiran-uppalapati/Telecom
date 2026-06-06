@@ -12,6 +12,8 @@ from src.uk_fttp_map.scoring import calculate_metrics, score_opportunities
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 SAMPLE_METRICS_PATH = PROJECT_ROOT / "data" / "sample" / "postcode_district_metrics.csv"
 SAMPLE_BOUNDARIES_PATH = PROJECT_ROOT / "data" / "sample" / "postcode_district_boundaries.geojson"
+PUBLIC_METRICS_PATH = PROJECT_ROOT / "data" / "public" / "ofcom_laua_fttp_metrics_202601.csv"
+PUBLIC_BOUNDARIES_PATH = PROJECT_ROOT / "data" / "public" / "laua_boundaries_dec_2025.geojson"
 OFCOM_FIXED_BROADBAND_ZIP_PATH = PROJECT_ROOT / "data" / "cache" / "ofcom_fixed_broadband_202601.zip"
 LAUA_BOUNDARIES_PATH = PROJECT_ROOT / "data" / "cache" / "laua_boundaries_dec_2025.geojson"
 OFCOM_FIXED_BROADBAND_URL = (
@@ -73,6 +75,9 @@ def download_file(url: str, destination: Path) -> None:
 
 
 def ensure_public_data_cached() -> None:
+    if PUBLIC_METRICS_PATH.exists() and PUBLIC_BOUNDARIES_PATH.exists():
+        return
+
     downloads = [
         (OFCOM_FIXED_BROADBAND_URL, OFCOM_FIXED_BROADBAND_ZIP_PATH),
         (ONS_LAUA_BOUNDARIES_URL, LAUA_BOUNDARIES_PATH),
@@ -116,6 +121,9 @@ def load_demo_metrics(path: Path | str = SAMPLE_METRICS_PATH) -> pd.DataFrame:
 
 def load_metrics(path: Path | str | None = None) -> pd.DataFrame:
     if path is None:
+        if PUBLIC_METRICS_PATH.exists():
+            return load_metrics(PUBLIC_METRICS_PATH)
+
         try:
             ensure_public_data_cached()
         except OSError as exc:
@@ -141,6 +149,9 @@ def load_metrics(path: Path | str | None = None) -> pd.DataFrame:
 
 
 def load_boundaries_path() -> Path:
+    if PUBLIC_BOUNDARIES_PATH.exists():
+        return PUBLIC_BOUNDARIES_PATH
+
     try:
         ensure_public_data_cached()
     except OSError as exc:

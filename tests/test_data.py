@@ -7,6 +7,8 @@ from src.uk_fttp_map.data import (
     DataUnavailableError,
     LAUA_BOUNDARIES_PATH,
     OFCOM_FIXED_BROADBAND_ZIP_PATH,
+    PUBLIC_BOUNDARIES_PATH,
+    PUBLIC_METRICS_PATH,
     REQUIRED_METRIC_COLUMNS,
     ensure_public_data_cached,
     load_demo_metrics,
@@ -60,10 +62,37 @@ def test_load_metrics_raises_when_public_data_unavailable(monkeypatch, tmp_path)
 
     monkeypatch.setattr("src.uk_fttp_map.data.OFCOM_FIXED_BROADBAND_ZIP_PATH", tmp_path / "missing.zip")
     monkeypatch.setattr("src.uk_fttp_map.data.LAUA_BOUNDARIES_PATH", tmp_path / "missing.geojson")
+    monkeypatch.setattr("src.uk_fttp_map.data.PUBLIC_METRICS_PATH", tmp_path / "missing-public.csv")
+    monkeypatch.setattr("src.uk_fttp_map.data.PUBLIC_BOUNDARIES_PATH", tmp_path / "missing-public.geojson")
     monkeypatch.setattr("src.uk_fttp_map.data.ensure_public_data_cached", fail_download)
 
     with pytest.raises(DataUnavailableError, match="public FTTP data is unavailable"):
         load_metrics()
+
+
+def test_load_metrics_prefers_bundled_public_file(monkeypatch, tmp_path):
+    public_metrics_path = tmp_path / "public.csv"
+    public_metrics_path.write_text(
+        "\n".join(
+            [
+                "postcode_district,area_name,geography_level,nation,region,total_premises,fttp_available_premises,area_sq_km",
+                "E06000001,Hartlepool,Local authority,England,Hartlepool,50000,25000,0",
+            ]
+        )
+    )
+
+    def fail_download():
+        raise AssertionError("download should not run when bundled public data exists")
+
+    monkeypatch.setattr("src.uk_fttp_map.data.PUBLIC_METRICS_PATH", public_metrics_path)
+    monkeypatch.setattr("src.uk_fttp_map.data.ensure_public_data_cached", fail_download)
+
+    df = load_metrics()
+
+    assert len(df) == 1
+    assert df.loc[0, "area_name"] == "Hartlepool"
+    assert PUBLIC_METRICS_PATH.name == "ofcom_laua_fttp_metrics_202601.csv"
+    assert PUBLIC_BOUNDARIES_PATH.name == "laua_boundaries_dec_2025.geojson"
 
 
 def test_load_ofcom_laua_metrics_maps_real_fttp_columns(tmp_path):
