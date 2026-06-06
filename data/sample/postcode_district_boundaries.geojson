@@ -1,0 +1,11 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {"type": "Feature", "properties": {"postcode_district": "M1"}, "geometry": {"type": "Polygon", "coordinates": [[[-2.25, 53.48], [-2.23, 53.48], [-2.23, 53.49], [-2.25, 53.49], [-2.25, 53.48]]]}},
+    {"type": "Feature", "properties": {"postcode_district": "SW1A"}, "geometry": {"type": "Polygon", "coordinates": [[[-0.15, 51.50], [-0.12, 51.50], [-0.12, 51.52], [-0.15, 51.52], [-0.15, 51.50]]]}},
+    {"type": "Feature", "properties": {"postcode_district": "B15"}, "geometry": {"type": "Polygon", "coordinates": [[[-1.93, 52.46], [-1.90, 52.46], [-1.90, 52.48], [-1.93, 52.48], [-1.93, 52.46]]]}},
+    {"type": "Feature", "properties": {"postcode_district": "CF10"}, "geometry": {"type": "Polygon", "coordinates": [[[-3.19, 51.47], [-3.16, 51.47], [-3.16, 51.49], [-3.19, 51.49], [-3.19, 51.47]]]}},
+    {"type": "Feature", "properties": {"postcode_district": "EH1"}, "geometry": {"type": "Polygon", "coordinates": [[[-3.20, 55.94], [-3.18, 55.94], [-3.18, 55.96], [-3.20, 55.96], [-3.20, 55.94]]]}},
+    {"type": "Feature", "properties": {"postcode_district": "BT1"}, "geometry": {"type": "Polygon", "coordinates": [[[-5.94, 54.59], [-5.91, 54.59], [-5.91, 54.61], [-5.94, 54.61], [-5.94, 54.59]]]}}
+  ]
+}
