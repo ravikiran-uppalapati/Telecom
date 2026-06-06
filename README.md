@@ -13,8 +13,13 @@ Public-data Streamlit dashboard for understanding UK full-fibre availability and
 
 ```powershell
 pip install -r requirements.txt
-python scripts/fetch_real_data.py
 streamlit run main.py
+```
+
+The app downloads the public Ofcom/ONS cache files on first run. You can also prefetch them manually:
+
+```powershell
+python scripts/fetch_real_data.py
 ```
 
 ## Methodology

@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from pathlib import Path
+from urllib.request import urlretrieve
 from zipfile import ZipFile
 
 import pandas as pd
@@ -13,6 +14,16 @@ SAMPLE_METRICS_PATH = PROJECT_ROOT / "data" / "sample" / "postcode_district_metr
 SAMPLE_BOUNDARIES_PATH = PROJECT_ROOT / "data" / "sample" / "postcode_district_boundaries.geojson"
 OFCOM_FIXED_BROADBAND_ZIP_PATH = PROJECT_ROOT / "data" / "cache" / "ofcom_fixed_broadband_202601.zip"
 LAUA_BOUNDARIES_PATH = PROJECT_ROOT / "data" / "cache" / "laua_boundaries_dec_2025.geojson"
+OFCOM_FIXED_BROADBAND_URL = (
+    "https://www.ofcom.org.uk/siteassets/resources/documents/research-and-data/"
+    "multi-sector/infrastructure-research/connected-nations-spring-2026/"
+    "202601_fixed_broadband_coverage_and_full_fibre_take-up-r1.zip?v=417689"
+)
+ONS_LAUA_BOUNDARIES_URL = (
+    "https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/"
+    "Local_Authority_Districts_DEC_2025_Boundaries_UK_BGC/FeatureServer/0/query"
+    "?where=1%3D1&outFields=LAD25CD,LAD25NM&outSR=4326&f=geojson"
+)
 
 REQUIRED_METRIC_COLUMNS = [
     "postcode_district",
@@ -52,6 +63,21 @@ def _nation_from_laua(code: str) -> str:
     return "Unknown"
 
 
+def download_file(url: str, destination: Path) -> None:
+    destination.parent.mkdir(parents=True, exist_ok=True)
+    urlretrieve(url, destination)
+
+
+def ensure_public_data_cached() -> None:
+    downloads = [
+        (OFCOM_FIXED_BROADBAND_URL, OFCOM_FIXED_BROADBAND_ZIP_PATH),
+        (ONS_LAUA_BOUNDARIES_URL, LAUA_BOUNDARIES_PATH),
+    ]
+    for url, destination in downloads:
+        if not destination.exists():
+            download_file(url, destination)
+
+
 def load_ofcom_laua_metrics(zip_path: Path | str = OFCOM_FIXED_BROADBAND_ZIP_PATH) -> pd.DataFrame:
     csv_name = "202601_fixed_laua_coverage_r1/202601_fixed_laua_coverage_r1.csv"
     with ZipFile(zip_path) as archive:
@@ -78,6 +104,10 @@ def load_ofcom_laua_metrics(zip_path: Path | str = OFCOM_FIXED_BROADBAND_ZIP_PAT
 
 def load_metrics(path: Path | str | None = None) -> pd.DataFrame:
     if path is None:
+        try:
+            ensure_public_data_cached()
+        except OSError:
+            pass
         if OFCOM_FIXED_BROADBAND_ZIP_PATH.exists():
             return load_ofcom_laua_metrics(OFCOM_FIXED_BROADBAND_ZIP_PATH)
         path = SAMPLE_METRICS_PATH
@@ -92,6 +122,10 @@ def load_metrics(path: Path | str | None = None) -> pd.DataFrame:
 
 
 def load_boundaries_path() -> Path:
+    try:
+        ensure_public_data_cached()
+    except OSError:
+        pass
     if LAUA_BOUNDARIES_PATH.exists() and OFCOM_FIXED_BROADBAND_ZIP_PATH.exists():
         return LAUA_BOUNDARIES_PATH
     return SAMPLE_BOUNDARIES_PATH
