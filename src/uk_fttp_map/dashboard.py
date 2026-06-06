@@ -152,7 +152,8 @@ def render_methodology() -> None:
     with st.expander("Methodology and limitations"):
         st.write(
             "This version uses public Ofcom Spring 2026 FTTP premises data where cached, "
-            "falling back to sample data only when the public files are not present. "
+            "and shows a transparent unavailable-data message when required public files "
+            "cannot be downloaded or loaded. "
             "The opportunity score is premises-led: 50% non-FTTP premises, "
             "30% inverse FTTP coverage, and 20% premises density. "
             "Copper, ADSL, PSTN, FTTC-only, and gigabit-capable proxy metrics are out of scope. "

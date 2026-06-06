@@ -4,10 +4,12 @@ import pandas as pd
 import pytest
 
 from src.uk_fttp_map.data import (
+    DataUnavailableError,
     LAUA_BOUNDARIES_PATH,
     OFCOM_FIXED_BROADBAND_ZIP_PATH,
     REQUIRED_METRIC_COLUMNS,
     ensure_public_data_cached,
+    load_demo_metrics,
     load_metrics,
     load_ofcom_laua_metrics,
     validate_metrics,
@@ -43,6 +45,25 @@ def test_load_metrics_returns_scored_rows():
     assert "opportunity_score" in df.columns
     assert "opportunity_category" in df.columns
     assert len(df) >= 6
+
+
+def test_load_demo_metrics_returns_labelled_sample_rows():
+    df = load_demo_metrics()
+
+    assert set(REQUIRED_METRIC_COLUMNS).issubset(df.columns)
+    assert set(df["geography_level"]) == {"Postcode district demo"}
+
+
+def test_load_metrics_raises_when_public_data_unavailable(monkeypatch, tmp_path):
+    def fail_download():
+        raise OSError("network unavailable")
+
+    monkeypatch.setattr("src.uk_fttp_map.data.OFCOM_FIXED_BROADBAND_ZIP_PATH", tmp_path / "missing.zip")
+    monkeypatch.setattr("src.uk_fttp_map.data.LAUA_BOUNDARIES_PATH", tmp_path / "missing.geojson")
+    monkeypatch.setattr("src.uk_fttp_map.data.ensure_public_data_cached", fail_download)
+
+    with pytest.raises(DataUnavailableError, match="public FTTP data is unavailable"):
+        load_metrics()
 
 
 def test_load_ofcom_laua_metrics_maps_real_fttp_columns(tmp_path):

@@ -35,6 +35,10 @@ REQUIRED_METRIC_COLUMNS = [
 ]
 
 
+class DataUnavailableError(RuntimeError):
+    """Raised when required public data cannot be loaded."""
+
+
 def validate_metrics(df: pd.DataFrame) -> None:
     missing = [column for column in REQUIRED_METRIC_COLUMNS if column not in df.columns]
     if missing:
@@ -102,15 +106,30 @@ def load_ofcom_laua_metrics(zip_path: Path | str = OFCOM_FIXED_BROADBAND_ZIP_PAT
     return _score_and_sort(result)
 
 
+def load_demo_metrics(path: Path | str = SAMPLE_METRICS_PATH) -> pd.DataFrame:
+    df = pd.read_csv(path)
+    validate_metrics(df)
+    df["area_name"] = df.get("area_name", df["postcode_district"])
+    df["geography_level"] = "Postcode district demo"
+    return _score_and_sort(df)
+
+
 def load_metrics(path: Path | str | None = None) -> pd.DataFrame:
     if path is None:
         try:
             ensure_public_data_cached()
-        except OSError:
-            pass
-        if OFCOM_FIXED_BROADBAND_ZIP_PATH.exists():
-            return load_ofcom_laua_metrics(OFCOM_FIXED_BROADBAND_ZIP_PATH)
-        path = SAMPLE_METRICS_PATH
+        except OSError as exc:
+            raise DataUnavailableError(
+                "The public FTTP data is unavailable. The app could not download "
+                "the Ofcom Spring 2026 fixed broadband dataset or ONS boundary file."
+            ) from exc
+
+        if not OFCOM_FIXED_BROADBAND_ZIP_PATH.exists():
+            raise DataUnavailableError(
+                "The public FTTP data is unavailable. The Ofcom Spring 2026 fixed "
+                "broadband dataset is missing from data/cache."
+            )
+        return load_ofcom_laua_metrics(OFCOM_FIXED_BROADBAND_ZIP_PATH)
 
     df = pd.read_csv(path)
     validate_metrics(df)
@@ -124,8 +143,14 @@ def load_metrics(path: Path | str | None = None) -> pd.DataFrame:
 def load_boundaries_path() -> Path:
     try:
         ensure_public_data_cached()
-    except OSError:
-        pass
-    if LAUA_BOUNDARIES_PATH.exists() and OFCOM_FIXED_BROADBAND_ZIP_PATH.exists():
-        return LAUA_BOUNDARIES_PATH
-    return SAMPLE_BOUNDARIES_PATH
+    except OSError as exc:
+        raise DataUnavailableError(
+            "The public FTTP boundaries are unavailable. The app could not download "
+            "the ONS December 2025 local-authority boundary file."
+        ) from exc
+    if not LAUA_BOUNDARIES_PATH.exists():
+        raise DataUnavailableError(
+            "The public FTTP boundaries are unavailable. The ONS local-authority "
+            "boundary file is missing from data/cache."
+        )
+    return LAUA_BOUNDARIES_PATH

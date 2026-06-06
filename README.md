@@ -43,6 +43,6 @@ Population is secondary context. Copper, ADSL, PSTN, and FTTC-only coverage are 
 
 ## Data Caveat
 
-Version 1 supports real public Ofcom/ONS cache data and falls back to sample data when the cache files are not present. Public-data ingestion is transparent and reproducible, but exact provider attribution is not part of the first release.
+Version 1 supports real public Ofcom/ONS cache data. If the required public files cannot be downloaded or loaded, the app shows a transparent unavailable-data message instead of silently substituting sample values. Public-data ingestion is transparent and reproducible, but exact provider attribution is not part of the first release.
 
-The current real-data layer uses Ofcom Spring 2026 local-authority FTTP coverage because the Spring 2026 postcode CSVs inspected in the Ofcom ZIP do not expose an explicit `Full Fibre availability` column. The postcode-district sample remains in the repo to validate the original postcode-district workflow without treating gigabit-capable coverage as FTTP.
+The current real-data layer uses Ofcom Spring 2026 local-authority FTTP coverage because the Spring 2026 postcode CSVs inspected in the Ofcom ZIP do not expose an explicit `Full Fibre availability` column. The postcode-district sample remains in the repo for development/demo checks only and is not used as a production fallback.
